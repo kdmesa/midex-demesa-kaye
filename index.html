@@ -78,7 +78,7 @@
 
 
     <label for="prodid"><b>Product ID <span class='text-danger'>*</span></b></label>
-    <input type="text" readonly id="prodid" value="EVNTDDRIVEN-1">
+    <input type="text" readonly id="prodid" value="EVNTDDRIVEN-MID-1">
 
     <label for="prodname"><b>Product Name <span class='text-danger'>*</span></b></label>
     <input type="text" id="prodname">
@@ -208,7 +208,7 @@
             return;
         }
 
-        const newProductId = `EVNTDDRIVEN-${currentProductId}`;
+        const newProductId = `EVNTDDRIVEN-MID-${currentProductId}`;
         currentProductId++;
 
         const newProduct = {
@@ -224,7 +224,7 @@
         document.getElementById('prodcategory').value = '--Select Category--';
         document.getElementById('sellprice').value = '';
 
-        document.getElementById('prodid').value = `EVNTDDRIVEN-${currentProductId}`;
+        document.getElementById('prodid').value = `EVNTDDRIVEN-MID-${currentProductId}`;
 
         displayProducts();
     }
